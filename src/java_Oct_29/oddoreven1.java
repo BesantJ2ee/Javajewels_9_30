@@ -9,13 +9,16 @@ public class oddoreven1 {
 		//12345678
 		//01234567
 		
-		for (int i = 0; i < ax.length; i++) {
-			if (ax[i].equals(a)) {
-				countf = i+1;
-				break;
-			}
-		}
-		System.out.println(countf);
+			for (int i = 0; i < ax.length; i++) {
+				if (ax[i].equals(a)) {
+					countf = i+1;
+					System.out.println(i+"Befor");
+					continue;
+				}
+			}	
+		
+		
+//		System.out.println(countf);
 		
 		
 		for (int j = ax.length - 1; j >= 0; j--) {
@@ -25,10 +28,10 @@ public class oddoreven1 {
 			}
 		}
 		// System.out.println(m);
-		System.out.println(countb);
+	//	System.out.println(countb);
 		String X1 = null;
 		int y = countf + countb;
-		System.out.println(y);
+	//	System.out.println(y);
 		if (y % 2 == 0) {
 			X1 = "even";
 		} else {
@@ -37,7 +40,7 @@ public class oddoreven1 {
 		return X1;
 	}
 	public static void main(String[] args) {
-		String n = oddoreven1.check("PRASTIGE", "P");
+		String n = oddoreven1.check("PRASTIGE", "S");
 		System.out.println("This is a" + n + "number");
 	}
 

@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class Order {
 	
@@ -5,5 +6,6 @@ public class Order {
 	
 	private String orderName;
 	
+	private List<Product> product;
 
 }

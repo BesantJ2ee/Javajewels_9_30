@@ -1,6 +1,19 @@
 package Nov20;
 
 public class Module5Varargs {
+	
+	protected String xyz()
+	{
+		return "a";
+	}
+	
+	int[] arrayZyx()
+	{
+		int[] a = new int[3];
+		return a;
+	}
+
+	
 
 	void display(String... args)
 	{

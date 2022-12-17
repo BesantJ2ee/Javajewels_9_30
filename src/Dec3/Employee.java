@@ -8,7 +8,14 @@ import java.io.Serializable;
 //Getters and setters for the data members
 //User defined objects/Pojo
 public class Employee implements Serializable {
-	
+	//What are the methods available in Objects
+	//Can we overide object class method?
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", age=" + age + ", gender=" + gender + ", salary=" + salary + ", bankName="
+				+ bankName + "]";
+	}
+
 	public String getName() {
 		return name;
 	}

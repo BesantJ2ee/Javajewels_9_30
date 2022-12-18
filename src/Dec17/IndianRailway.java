@@ -22,6 +22,15 @@ public class IndianRailway {
 		w1.cfg();
 		
 		
+		WesternRailway w2 = new WesternRailway();
+		
+	//	WesternRailway w3 = new WesternRailway(12,3,4);
+		
+	//	WesternRailway w4 = new WesternRailway("abc",4);
+		
+		
+		w2.sdf();
+		
 	}
 
 }

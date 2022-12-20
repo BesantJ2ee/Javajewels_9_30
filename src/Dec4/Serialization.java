@@ -8,10 +8,11 @@ public class Serialization {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		try {
+		
 			Studentp xc = new Studentp();
 			xc.setName("Arun");
 			xc.setAge(5);
+			xc.setValue(100);
 //Create a student object with serializable inteface implemented
 			FileOutputStream out = new FileOutputStream("f.txt");
 //Need to creare fileoutput stream class use the object
@@ -25,9 +26,7 @@ public class Serialization {
 			out1.close();
 
 			System.out.println("success");
-		} catch (Exception e) {
-			System.out.println(e);
-		}
+		
 	}
 
 }

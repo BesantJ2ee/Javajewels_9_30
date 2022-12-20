@@ -10,6 +10,7 @@ public class Studentp implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private int id;
 	private String name;
+	private int value;
 	transient int age;
 	public int getAge() {
 		return age;
@@ -28,6 +29,12 @@ public class Studentp implements Serializable{
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public int getValue() {
+		return value;
+	}
+	public void setValue(int value) {
+		this.value = value;
 	}
 	
 }

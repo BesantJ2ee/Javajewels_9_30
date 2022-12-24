@@ -5,6 +5,8 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.util.Map;
 
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -16,6 +18,43 @@ public class SwingExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		Entry entry = new Entry();
+		entry.setVehiclenumber(142412);	
+		
+		SaveLogic vb = new SaveLogic();
+	  Map<Integer, Entry> mx=vb.saveData(entry);
+		
+		
+		Exit xc = new Exit();
+		xc.setVehiclenumber(2344);
+		
+		
+		for (Map.Entry<Integer, Entry> fg : mx.entrySet()) {
+			if (fg.getKey().equals
+					(xc.getVehiclenumber())) {
+
+					Entry entry1=fg.getValue();
+				if(entry1.getLaocalTime()!=null)
+				{
+				LocalDateTime hours=entry1.getLaocalTime();
+				LocalDateTime minutes=entry1.getLaocalTime();
+				hours.getHour();
+				minutes.getMinute();
+				
+				
+				LocalDateTime systemTime = LocalDateTime.now();
+				systemTime.minusHours(hours.getHour());
+				systemTime.minusMinutes(minutes.getMinute());
+					
+			    }
+							
+				
+				
+			}
+
+		}
+		
 		
 		// Reference
 		//Invoice, bill
@@ -59,10 +98,10 @@ public class SwingExample {
 		admin.setBounds(400, 335, 200, 100);
 		
 		TextField password = new TextField();
-		password.setBounds(200, 100, 150, 20);
+		password.setBounds(200, 100, 250, 100);
 
 		JLabel adminLabel = new JLabel("SL No");
-		adminLabel.setBounds(120, 50, 100, 20);
+		adminLabel.setBounds(220, 150, 100, 20);
 		
 		
 		JLabel passwordLabel = new JLabel("Password");

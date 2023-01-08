@@ -1,17 +1,24 @@
 package Dec24_Exception;
 
 public class ExceptionPropagation {
-	
-	void abc(){  
-	    int data=50/0;  
+	//cpv()->xyz()->abc()
+	//chaining
+	//exception propagation
+	void abc(){  //method declaration
+	    int data=50/0; //exception criteria maintained 
 	  }  
 	  void xyz(){  
-	    abc();  
+	    abc();// calling place  
 	  }  
 	  void cpv(){  
-	   try{  
-	    xyz();  
-	   }catch(Exception e){System.out.println("exception handled");}  
+		  try{
+			 // int data=50/0;
+			    xyz();  
+			   }
+			   catch(Exception e)
+			   {
+				   System.out.println("exception handled");
+				  } 
 	  }  
 
 	public static void main(String[] args) {

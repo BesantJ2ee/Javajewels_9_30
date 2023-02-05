@@ -6,6 +6,8 @@ public class TestSynchrn {
 		// TODO Auto-generated method stub
      
 		Rectangle x1 = new Rectangle();
+		//Rectangle x2 = new Rectangle();
+		//Rectangle x3 = new Rectangle();
 		
 		//two threads creatng
 		//rectangle object passing to both thread as argument

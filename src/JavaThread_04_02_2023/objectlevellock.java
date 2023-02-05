@@ -15,7 +15,7 @@ public class objectlevellock implements Runnable{
         //synchronized block
         //synchronized (this) Class level not happening
         //Synchronized-> At a time on;y one thread only permitted inside
-        synchronized (objectlevellock.class)//class level lock is happening
+        synchronized (this)//class level lock is happening
         {
             System.out.println(
                 "in block "
